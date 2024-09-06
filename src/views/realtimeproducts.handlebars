@@ -1,0 +1,122 @@
+<div class="form-container">
+    <form class="form-products" id="formProduct">
+        <h2>Real Time Products</h2>
+        <div class="form-group1">
+            <!-- Nombre del Producto -->
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="title" class="form-label">Nombre del Producto</label>
+                    <span class="input-group-text"><i></i></span>
+                    <input class="form-control" type="text" name="title" id="title" placeholder="Ej. Smartphone"required>
+                </div>
+            </div>
+            <!-- Descripción -->
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="description" class="form-label">Descripción</label>
+                    <span class="input-group-text"><i></i></span>
+                    <input class="form-control" type="text" name="description" id="description"
+                        placeholder="Ej. Último modelo con características avanzadas" required>
+                </div>
+            </div>
+            <!-- Stock -->
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="stock" class="form-label">Stock</label>
+                    <span class="input-group-text"><i></i></span>
+                    <input class="form-control" type="number" name="stock" id="stock" placeholder="Ej. 100" required>
+                </div>
+            </div>
+            <!-- Imagen (URL) -->
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="thumbnail" class="form-label">Imagen (URL)</label>
+                    <span class="input-group-text"><i></i></span>
+                    <input class="form-control" type="text" name="thumbnail" id="thumbnail"
+                        placeholder="Ej. https://example.com/image.jpg" required>
+                </div>
+            </div>
+            <!-- Categoría -->
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="category" class="form-label">Categoría</label>
+                    <span class="input-group-text"><i></i></span>
+                    <input class="form-control" type="text" name="category" id="category" placeholder="Ej. Electrónicos"
+                        required>
+                </div>
+            </div>
+            <!-- Precio -->
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="price" class="form-label">Precio</label>
+                    <span class="input-group-text"><i></i></span>
+                    <input class="form-control" type="number" name="price" id="price" placeholder="Ej. 499.99" required>
+                </div>
+            </div>
+            <!-- Código -->
+            <div class="form-group">
+                <div class="input-group">
+                    <label for="code" class="form-label">Código</label>
+                    <span class="input-group-text"><i></i></span>
+                    <input class="form-control" type="text" name="code" id="code" placeholder="Ej. ABC123" required>
+                </div>
+            </div>
+            <!-- Estado (Checkbox) -->
+            <div class="form-group">
+                <div class="form-check mt-4">
+                    <input name="status" class="form-check-input" type="checkbox" value="true" id="flexCheckChecked"checked>
+                    <label class="form-check-label" for="flexCheckChecked">Estado</label>
+                </div>
+            </div>
+            <!-- Botón Registrar -->
+            <div class="col-12 mt-4">
+                <button class="btn" type="submit" id="add-btn">Registrar </button>
+            </div>
+        </div>
+
+        <h2>Eliminar Producto:</h2>
+        <!-- ID del Producto a Eliminar -->
+        <div class="form-group">
+            <div class="input-group">
+                <label for="id-prod" class="form-label">ID del Producto</label>
+                <span class="input-group-text"><i></i></span>
+                <input class="form-control" type="text" name="id-prod" id="id-prod" placeholder="Ej. 123">
+            </div>
+        </div>
+        <!-- Botón Eliminar -->
+        <div class="">
+            <button class="btn" type="button" id="delete-btn">Eliminar</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+<section>
+    <main class="inicio-productos contenedor">
+        <div class="contenedor-inicio-producto" id="list-products">
+        </div>
+    </main>
+</section>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realtimeproducts.js"></script>
+
+
+
+
+
+
+<section>
+    <main class="inicio-productos contenedor">
+        <div class="contenedor-inicio-producto" id="list-products">
+        </div>
+    </main>
+</section>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realtimeproducts.js"></script>

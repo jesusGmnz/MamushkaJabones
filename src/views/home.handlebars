@@ -1,0 +1,59 @@
+<body>
+    <header class="barra">
+        <div class="menu">
+            <a href="./index.html" class="logo">Mamushka Jabones</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="./img/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./index.html">inicio</a></li>
+                    <li><a href="./pages/nosotros.html">nosotros</a></li>
+                    <li><a href="./pages/productos.html">productos</a></li>
+                    <li><a href="./pages/blog.html">blog</a></li>
+                    <li><a href="./pages/contacto.html">contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="promociones-contenedor contenedor">
+            <div class="promociones-contenedor-texto">
+            <h1>Producto en promociones</h1>
+            <p>
+                disfruta de las mejores pack en jabones
+            </p>
+            <a href="./pages/productos.html" class="btn-1">informacion</a>
+            </div>
+            <div class="menu-img">
+                <img src="./img/promocion jabones.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <section>
+        <main class="inicio-productos contenedor">
+            <h1>Productos</h1>
+            <div class="contenedor-inicio-producto">
+                {{#each listadeproductos}}
+                <div class="oferta-1">
+                    <div class="oferta-texto">
+                        <h3>{{this.title}}</h3>
+                        <ul>
+                            <li><i></i> Code: {{this.code}}</li>
+                            {{!-- <li><i></i> ID: {{this.id}}</li> --}}
+                            <li><i></i> Description: {{this.description}}</li>
+                            <li><i></i> Price: ${{this.price}}</li>
+                            <li><i></i> Category: {{this.category}}</li>
+                            <li><i></i> Status: {{this.status}}</li> 
+                            <li><i></i> Stock: {{this.stock}}</li>
+                            <li>
+                                <i></i><img src="{{this.thumbnail}}" alt="{{this.title}}">
+                            </li>
+                        </ul>
+                        <a href="#" class="carrito btn">Comprar</a>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </main>
+    </section>
+</body>

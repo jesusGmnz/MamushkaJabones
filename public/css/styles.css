@@ -1,0 +1,627 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/4081459.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 70px 0;
+}
+
+.logo {
+    font-size: 35px;
+    color: #0B3954;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu {
+    background-color: white;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 25px;
+    padding: 20px;
+    color: #292F36;
+    font-weight: 700;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.menu .navbar ul li {
+    background-color: white;
+}
+
+.menu .navbar ul li a:hover {
+    color: white;
+    -webkit-text-stroke: 1px #292F36;
+}
+
+#menu {
+    display: none;
+}
+
+.contenedor {
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.promociones-contenedor {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.promociones-contenedor h1 {
+    font-size: 70px;
+    line-height: 1;
+    color: #0B3954;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.promociones-contenedor p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.promociones-contenedor-texto {
+    flex-basis: 40%;
+}
+
+.menu-img {
+    flex-basis: 60%;
+}
+
+.menu-img img {
+    border-radius: 100px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #0B3954;
+    border: 2px solid #0B3954;
+    text-transform: capitalize;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #0B3954;
+}
+
+.caja-oferta {
+    padding: 100px 0;
+}
+
+.caja-oferta h2 {
+    font-size: 40px;
+    line-height: 1;
+    color: #0B3954;
+    margin-bottom: 10px;
+}
+
+.oferta-contenedor {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.oferta-1 {
+    flex-basis: calc(30% - 30px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.oferta-1 img {
+    width: 100%;
+}
+
+.oferta-1 h3 {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.oferta-1 p {
+    margin-bottom: 10px;
+}
+
+.oferta-texto{
+    line-height: 25px;
+}
+
+.precio {
+    color: #0B3954;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.tarjeta {
+    flex-basis: 40%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/Efervecentes.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.tarjeta h3 {
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.tarjeta p {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #0B3954;
+    margin-bottom: 20px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 8px 30px;
+    border: 3px solid #0B3954;
+    color: white;
+    border-radius: 15px;
+    background-color: #0B3954;
+}
+
+.promociones {
+    padding: 60px 0;
+    background-color: white;
+    border-radius: 20px;
+    background-image: url(../img/FondoPromocio.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.caja-promociones {
+    display: flex;
+}
+
+.promociones-texto {
+    flex-basis: 40%;
+    margin: 10px 10px 10px 10px;
+    color: #0B3954;
+}
+
+.promocion-img {
+    flex-basis: 60%;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
+
+.promocion-img img {
+    width: 1200px;
+    border-radius: 20px;
+}
+
+.inicio-productos {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contenedor-inicio-producto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.noticia {
+    padding: 50px 0 100px 0;
+}
+
+.noticia-contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.noticia-1 {
+    flex-basis: calc(33.3% - 30px);
+    margin-top: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.noticia-texto {
+    padding: 40px;
+}
+
+.btn-noticia {
+    display: inline-block;
+    border: 3px solid #0B3954;
+    border-radius: 15px;
+    padding: 8px 25px;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #0B3954;
+}
+
+.noticia-titulo {
+    text-align: center;
+    color: #0B3954;
+}
+
+.noticia-1 {
+    text-align: center;
+    color: #0B3954;
+    background-color: #CAF726;
+}
+
+.titulo-patrocinadores {
+    background-color: #CAF726;
+    color: #0B3954;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.patrocinadores {
+    display: flex;
+    justify-content: space-around;
+    background-color: #CAF726;
+}
+
+.patrocinadores img {
+    width: 250px;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.encabezado-texto {
+    flex-basis: 50%;
+    margin-right: 25px;
+}
+
+.encabezado-texto h2 {
+    color: #0B3954;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.encabezado-texto h1 {
+    font-size: 70px;
+    text-transform: capitalize;
+    line-height: 1;
+    color: #0B3954;
+    margin-bottom: 35px;
+}
+
+.encabezado-texto p {
+    font-size: 18px;
+    color: #0B3954;
+    margin-bottom: 35px;
+    font-weight: 700;
+}
+
+.encabezado-boton {
+    display: flex;
+}
+
+.btn-3 {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #0B3954;
+    margin-right: 20px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+    border-radius: 15px;
+}
+
+.encabezado-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.encabezado-img img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50px;
+}
+
+footer {
+    background-color: #0B3954;
+    height: auto;
+    width: 100vw;
+    font-family: "Rubik", sans-serif;
+    padding-top: 40px;
+    color: aliceblue;
+}
+
+.footer-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-contenedor h3 {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: capitalize;
+    line-height: 50px;
+}
+
+.footer-contenedor p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.rrss {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 60px 0;
+}
+
+.rrss li {
+    margin: 0 15px;
+}
+
+.rrss a {
+    text-decoration: none;
+    color: white;
+}
+
+.rrss a i {
+    font-size: 40px;
+    transition: color 0.4s ease;
+}
+
+.rrss a:hover i {
+    color: #CAF726;
+}
+
+.footer-boton {
+    background-color: #CAF726;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-boton p {
+    font-size: 22px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: #0B3954;
+}
+
+.footer-boton span {
+    text-transform: capitalize;
+    opacity: 0.6;
+}
+
+/* realtimeproducts estilos*/
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200vh;
+}
+
+
+.form-products{
+    text-align: center;
+}
+
+.form-products h2{
+    font-size: 40px;
+    color: #0B3954;
+    margin-bottom: 15px;
+}
+
+form {
+    padding: 50px;
+    margin-top: 50px;
+    background: #CAF726;
+    border-radius: 15px;
+    width: 150vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+    margin-bottom: 40px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label{
+    color: #0B3954;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.form-control{
+    padding: 20px 15px;
+    background-color: #0B3954;
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+}
+
+::placeholder{
+    color:white;
+    font-size: 15px;
+}
+
+@media (max-width: 991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        color: #0B3954;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .barra {
+        min-height: 0vh;
+        padding: 100px 30px 50px 30px;
+    }
+
+    .promociones-contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .promociones-contenedor-texto {
+        margin-bottom: 25px;
+    }
+
+    .caja-ofertas {
+        padding: 30px;
+    }
+
+    .oferta-contenedor {
+        flex-direction: column;
+    }
+
+    .oferta-1 {
+        order: -2;
+        margin-bottom: 30px;
+    }
+
+    .promociones {
+        padding: 30px;
+    }
+
+    .caja-promociones {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .promociones-texto {
+        margin-bottom: 25px;
+    }
+
+    .inicio-productos {
+        padding: 30px;
+    }
+
+    .contenedor-inicio-producto {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    .noticia {
+        padding: 30px;
+    }
+
+    .noticia-contenedor {
+        flex-direction: column;
+    }
+
+    .encabezado {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .encabezado-texto {
+        margin-bottom: 25px;
+    }
+
+    .encabezado-boton {
+        flex-direction: column;
+    }
+}
